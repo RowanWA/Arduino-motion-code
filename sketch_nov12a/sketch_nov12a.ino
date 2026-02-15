@@ -22,7 +22,7 @@ void loop() {
   Serial.println(LoopTime);
   if (TimeLog >= LoopTime + 500) {
     if (((MotionSum) / (MotionCount)) >= 0.001) {
-      digitalWrite(MotorPin, HIGH);
+      digitalWrite(MotorPin, 25);
       delay(750);
       digitalWrite(MotorPin, LOW);
       MotionCount = 0;
